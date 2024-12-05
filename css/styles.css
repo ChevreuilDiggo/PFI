@@ -60,6 +60,10 @@ main{
     .grid {
         grid-template-columns: 1fr;
     }
+
+    .footer{
+        grid-row-start: -2;
+    }
 }
 .box {
     padding: 1vw;
