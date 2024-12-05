@@ -46,6 +46,21 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
+@media(min-width: 768px){
+    .box{
+        min-width: 30vw;
+    }
+}
+@media (max-width: 480px) {
+    .box {
+        min-width: 90vw; 
+        padding: 10px;      
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
 .box {
     padding: 1vw;
     box-sizing:border-box;
