@@ -2,6 +2,7 @@
 body{
     margin:0;
     height:100%;
+    width:100%;
 }
 header{
     background-color: black;
@@ -128,19 +129,21 @@ h1{
     margin:0.5vw;
 }
 @media (max-width: 768px) {
-    .timetable {
+    .horaire {
         grid-template-columns: 1fr repeat(5, 1fr);
         font-size: 0.9rem;
+        overflow-x: auto;
     }
 
-    .entry {
+    .cell {
         padding: 8px;
     }
 }
 
 @media (max-width: 480px) {
-    .timetable {
+    .horaire {
         grid-template-columns: 1fr;
+        overflow-x: auto;
     }
 
     .day {
@@ -149,12 +152,12 @@ h1{
         padding: 10px;
     }
 
-    .time-slot, .entry {
+    .time, .cell {
         padding: 10px;
         font-size: 0.85rem;
     }
 
-    .entry {
+    .cell {
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
     }
