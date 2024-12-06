@@ -1,13 +1,13 @@
 /* Universal css (header, footer, etc) */
 body{
     margin:0;
+    height:100%;
 }
 header{
     background-color: black;
     color:white;
     padding:10px;
-    grid-column-end: 1;
-    grid-column-start: 5;
+    grid-column: 1/-1;
     grid-row-end: 1;
     font-size: large;
 }
@@ -22,8 +22,8 @@ header{
 }
 footer{
     background-color: red;
-    grid-column: 1/5;
-    grid-row-start:-2 ;
+    grid-column: 1/-1;
+    height:5vh;
     padding:0.5vw;
 }
 .name{
@@ -33,47 +33,97 @@ footer{
     margin-top: 0.5vh;
     margin-bottom: -5vh
 }
-/* Specific css */
-.grid{
-    display:grid;
+.linksource:link{
+    color:black;
+}
+.linksource:visited{
+    color:black;
+}
+main{
+    grid-column: 1 / -1; 
+    width: 100%;         
 }
 /* Menu drop button css */
 .dropbtn {
-    background-color: #FF0000;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
+  background-color: #FF0000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #FF0000;
+}
+/* Specific css */
+h1{
+    text-align: center;
+}
+.horaire {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 2fr);
+    grid-auto-rows: minmax(50px, auto);
+    width: 100%;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.day {
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #FF0000;
-  }
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.time {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid rgb(150, 150, 150);
+}
+.cell {
+    border: 1px solid rgb(150, 150, 150);
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}
+.cours{
+    font-weight: bold;
+}
+.code{
+    font-style: italic;
+}
+.desc{
+    display:flex;
+    grid-column: 1/-1;
+    margin:0.5vw;
+}
