@@ -156,6 +156,10 @@ h1{
 .Kadouche{
     float: right;
 }
+.www{
+    float:right;
+    width: 10vw;
+}
 @media (max-width: 768px) {
     body{
         width: 100%;
