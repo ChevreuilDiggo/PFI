@@ -34,11 +34,18 @@ footer{
     margin-top: 0.5vh;
     margin-bottom: -5vh
 }
-.linksource:link{
+a:link{
     color:black;
 }
-.linksource:visited{
+a:visited{
     color:black;
+}
+a:hover{
+    color:blue;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
 }
 main{
     grid-column: 1 / -1; 
@@ -142,7 +149,6 @@ h1{
 
 @media (max-width: 480px) {
     .horaire {
-        grid-template-columns: 1fr;
         overflow-x: auto;
     }
 
