@@ -135,6 +135,24 @@ h1{
     grid-column: 1/-1;
     margin:0.5vw;
 }
+#explo{
+    background-color:lightgreen;
+}
+#web{
+    background-color: paleturquoise;
+}
+#fra{
+    background-color: rgb(128, 92, 25);
+}
+#math{
+    background-color: #FF0000;
+}
+#prog{
+    background-color: gold;
+}
+#philo{
+    background-color: violet;
+}
 @media (max-width: 768px) {
     .horaire {
         grid-template-columns: 1fr repeat(5, 1fr);
