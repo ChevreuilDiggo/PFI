@@ -153,7 +153,13 @@ h1{
 #philo{
     background-color: violet;
 }
+.Kadouche{
+    float: right;
+}
 @media (max-width: 768px) {
+    body{
+        width: 100%;
+    }
     .horaire {
         grid-template-columns: 1fr repeat(5, 1fr);
         font-size: 0.9rem;
@@ -166,6 +172,9 @@ h1{
 }
 
 @media (max-width: 480px) {
+    body{
+        width: 100%;
+    }
     .horaire {
         overflow-x: auto;
     }
