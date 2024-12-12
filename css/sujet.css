@@ -114,12 +114,12 @@ h1{
     height:50vh;
 }
 @media(min-width: 768px){
-    body{
+    main{
         margin:1vw
     }
 }
 @media (max-width: 480px) {
-    body{
+    main{
         margin:1vw
     }
 }
