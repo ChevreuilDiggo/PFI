@@ -113,3 +113,13 @@ h1{
 .card{
     height:50vh;
 }
+@media(min-width: 768px){
+    body{
+        margin:1vw
+    }
+}
+@media (max-width: 480px) {
+    body{
+        margin:1vw
+    }
+}
