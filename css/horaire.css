@@ -135,22 +135,22 @@ h1{
     grid-column: 1/-1;
     margin:0.5vw;
 }
-#explo{
+.explo{
     background-color:lightgreen;
 }
-#web{
+.web{
     background-color: paleturquoise;
 }
-#fra{
+.fra{
     background-color: rgb(128, 92, 25);
 }
-#math{
+.math{
     background-color: #FF0000;
 }
-#prog{
+.prog{
     background-color: gold;
 }
-#philo{
+.philo{
     background-color: violet;
 }
 .Kadouche{
