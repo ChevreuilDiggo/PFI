@@ -95,6 +95,9 @@ main{
 .pre{
     text-align: center;
 }
+main{
+    font-size: 0.70em;
+}
 div.gallery {
     margin: 5px;
     padding: 5px;
@@ -128,10 +131,10 @@ div.desc {
 @media (max-width: 480px) {
     main{
         margin: 1vw;
+        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-    }
-    .gallery{
-        font-size:small;
+        font-size: 0.70em;
     }
 }

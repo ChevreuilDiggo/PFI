@@ -92,3 +92,6 @@ main{
   background-color: #FF0000;
 }
 /* Specific css */
+li{
+  list-style-type: none;
+}
