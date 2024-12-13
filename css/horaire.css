@@ -153,8 +153,9 @@ h1{
 .philo{
     background-color: violet;
 }
-.Kadouche{
+.Linux{
     float: right;
+    width:20vw;
 }
 .www{
     float:right;
@@ -197,5 +198,8 @@ h1{
     .cell {
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
+    }
+    .web{
+        width:20vw;
     }
 }

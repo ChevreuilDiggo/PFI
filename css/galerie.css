@@ -134,4 +134,7 @@ div.desc {
         display: flex;
         flex-flow: column;
     }
+    .gallery{
+        font-size:small;
+    }
 }
