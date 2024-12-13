@@ -130,8 +130,9 @@ div.desc {
 }
 @media (max-width: 480px) {
     main{
+        display: grid;
+        grid-template-columns: 1fr;
         margin: 1vw;
-        display: flex;
         flex-flow: column;
     }
     .gallery{
