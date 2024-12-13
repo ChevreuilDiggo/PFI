@@ -92,3 +92,46 @@ main{
   background-color: #FF0000;
 }
 /* Specific css */
+.pre{
+    text-align: center;
+}
+main{
+    display:grid;
+}
+div.gallery {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    float: left;
+    width: 15vw;
+}
+
+div.gallery:hover {
+     border: 1px solid #000;
+}
+
+div.gallery img {
+     width: 100%;
+     height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.gal{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media(min-width: 768px){
+    main{
+        margin: 1vw;
+    }
+}
+@media (max-width: 480px) {
+    main{
+        margin: 1vw;
+        display: flex;
+        flex-flow: column;
+    }
+}

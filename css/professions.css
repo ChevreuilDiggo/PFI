@@ -106,7 +106,6 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
-    max-width: 800px;
     width: 90%;
     margin: auto;
     padding: 20px 0;
@@ -131,24 +130,11 @@ body {
 }
 
 .profession-table div:nth-child(2n+1) {
-    background-color: #e9e9e9;
+    background-color: lightgray;
 }
-
-.source {
+.centering{
     text-align: center;
-    margin-top: 1em;
 }
-
-.source a {
-    color: blue;
-    text-decoration: none;
-}
-
-.source a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive design for tablets */
 @media (max-width: 768px) {
     .grid-container {
         width: 95%;
@@ -157,8 +143,6 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-/* Responsive design for phones */
 @media (max-width: 480px) {
     .grid-container {
         width: 100%;
